@@ -13,11 +13,11 @@ services:
       - SPRING_PROFILES_ACTIVE=dev
       - APPLICATION_AUTHENTICATION_UI_ALLOWLIST=0.0.0.0/0
 
-  hmpps-template-kotlin:
-    image: ghcr.io/ministryofjustice/hmpps-template-kotlin:latest
+  srrc-verify-biometric-scans-api:
+    image: ghcr.io/ministryofjustice/srrc-verify-biometric-scans-api:latest
     networks:
       - hmpps
-    container_name: hmpps-template-kotlin
+    container_name: srrc-verify-biometric-scans-api
     ports:
       - "8080:8080"
     healthcheck:
