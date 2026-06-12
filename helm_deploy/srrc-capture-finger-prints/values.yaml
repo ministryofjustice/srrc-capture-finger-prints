@@ -41,13 +41,13 @@ generic-service:
 
   namespace_secrets:
     # These secrets are created by terraform.
-    srrc-client-creds:
+    srrc-capture-finger-prints-client-creds:
       CLIENT_CREDS_CLIENT_ID: 'CLIENT_CREDS_CLIENT_ID'
       CLIENT_CREDS_CLIENT_SECRET: 'CLIENT_CREDS_CLIENT_SECRET'
-    srrc-auth-code:
+    srrc-capture-finger-prints-auth-code:
       AUTH_CODE_CLIENT_ID: 'AUTH_CODE_CLIENT_ID'
       AUTH_CODE_CLIENT_SECRET: 'AUTH_CODE_CLIENT_SECRET'
-    srrc-session-secret:
+    srrc-capture-finger-prints-session-secret:
       SESSION_SECRET: 'SESSION_SECRET'
     srrc-elasticache-redis:
       REDIS_HOST: 'primary_endpoint_address'
