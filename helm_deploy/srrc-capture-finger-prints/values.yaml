@@ -41,18 +41,18 @@ generic-service:
 
   namespace_secrets:
     # These secrets are created by terraform.
-    srrc-capture-finger-prints-client-creds:
+    srrc-client-creds:
       CLIENT_CREDS_CLIENT_ID: 'CLIENT_CREDS_CLIENT_ID'
       CLIENT_CREDS_CLIENT_SECRET: 'CLIENT_CREDS_CLIENT_SECRET'
-    srrc-capture-finger-prints-auth-code:
+    srrc-auth-code:
       AUTH_CODE_CLIENT_ID: 'AUTH_CODE_CLIENT_ID'
       AUTH_CODE_CLIENT_SECRET: 'AUTH_CODE_CLIENT_SECRET'
-    srrc-capture-finger-prints-session-secret:
+    srrc-session-secret:
       SESSION_SECRET: 'SESSION_SECRET'
-    srrc-capture-finger-prints-elasticache-redis:
+    srrc-elasticache-redis:
       REDIS_HOST: 'primary_endpoint_address'
       REDIS_AUTH_TOKEN: 'auth_token'
-    srrc-capture-finger-prints-application-insights:
+    srrc-application-insights:
       APPLICATIONINSIGHTS_CONNECTION_STRING: "APPLICATIONINSIGHTS_CONNECTION_STRING"
     # This secret will need to be created in your namespace (note it isn't in hmpps-templates-dev)
     # IRSA configuration in your namespace will also be required, and then uncomment serviceAccountName above.
